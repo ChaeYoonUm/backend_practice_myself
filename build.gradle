@@ -12,9 +12,13 @@ repositories {
 	mavenCentral()
 }
 
+// implementation : 보안에 더 강함
+// compile은 springboot 3.0 버전부터 권자하지 않는다고 함
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'junit:junit:4.13.1'
+	implementation 'org.projectlombok:lombok' //롬복 : Getter, Setter, 기본생성자, toString 등을 어노테이션으로 자동 생성
 }
 
 tasks.named('test') {
