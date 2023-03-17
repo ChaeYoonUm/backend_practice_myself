@@ -4,13 +4,14 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import paran.domain.BaseTimeEntity;
 
 // 주요 어노테이션을 클래스와 가깝게 위치 -> 주요하지 않은 어노테이션을 위에 두면 쉽게 삭제 가능
 @Getter //롬복 어노테이션
 @NoArgsConstructor //롬복 어노테이션
 @Entity //JPA의 어노테이션
 //*******Entity 클래스에서는 절대 Setter 메소드 만들지 않음************ : 인스턴스 값들이 언제 어디서 변해야 하는지 명확하게 구분 못하기 때문
-public class Posts { //Posts 클래스 : 실제 DB의 테이블과 매칭될 클래스 = Entity 클래스
+public class Posts extends BaseTimeEntity { //Posts 클래스 : 실제 DB의 테이블과 매칭될 클래스 = Entity 클래스
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,6 +30,11 @@ public class Posts { //Posts 클래스 : 실제 DB의 테이블과 매칭될 클
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String title, String content){
+        this.title=title;
+        this.content=content;
     }
 
 }
