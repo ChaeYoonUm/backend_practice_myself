@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import paran.domain.BaseTimeEntity;
 
 // 주요 어노테이션을 클래스와 가깝게 위치 -> 주요하지 않은 어노테이션을 위에 두면 쉽게 삭제 가능
+@Table(name = "tbl_memo")
 @Getter //롬복 어노테이션
 @NoArgsConstructor //롬복 어노테이션
 @Entity //JPA의 어노테이션
