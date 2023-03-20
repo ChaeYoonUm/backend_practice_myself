@@ -28,6 +28,9 @@ dependencies {
 	//mySQL 연동
 	implementation 'mysql:mysql-connector-java:8.0.3'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	//Firebase 연동
+	//implementation group: 'com.google.firebase', name: 'firebase-admin', version: '8.1.0'
 }
 
 tasks.named('test') {

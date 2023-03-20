@@ -1,10 +1,10 @@
 {{>layout/header}}
 
-<h1>스프링 부트 - h2 연동 테스트</h1>
+<h1>SpringBoot - mySQL Test</h1>
 <div class="col-md-12">
     <div class="row">
         <div class="col-md-6">
-            <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+            <a href="/posts/save" role="button" class="btn btn-primary">Content Upload</a>
             {{#userName}}
                 Logged in as: <span id="user">{{userName}}</span>
                 <a href="/logout" class="btn btn-info active" role="button">Logout</a>
@@ -20,10 +20,10 @@
     <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
-            <th>게시글번호</th>
-            <th>제목</th>
-            <th>작성자</th>
-            <th>최종수정일</th>
+            <th>Content Number</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Latest Update</th>
         </tr>
         </thead>
         <tbody id="tbody">
