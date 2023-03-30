@@ -13,6 +13,11 @@ repositories {
 	mavenCentral()
 }
 
+tasks.named("jar") {
+	enabled = false
+}
+
+
 // implementation : 보안에 더 강함
 // compile은 springboot 3.0 버전부터 권자하지 않는다고 함
 dependencies {
@@ -58,9 +63,6 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-tasks.named("jar") {
-	enabled = false
-}
 
 manifest {
 	attributes 'Application': 'paran.Application'
