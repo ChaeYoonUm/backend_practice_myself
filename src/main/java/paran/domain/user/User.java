@@ -1,10 +1,12 @@
 package paran.domain.user;
 
-import jakarta.persistence.*;
+//import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import paran.domain.BaseTimeEntity;
+
+import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor

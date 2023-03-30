@@ -1,10 +1,12 @@
 package paran.domain.posts;
 
-import jakarta.persistence.*;
+//import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import paran.domain.BaseTimeEntity;
+
+import javax.persistence.*;
 
 // 주요 어노테이션을 클래스와 가깝게 위치 -> 주요하지 않은 어노테이션을 위에 두면 쉽게 삭제 가능
 @Table(name = "tbl_memo")
