@@ -41,6 +41,9 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
+	//MariaDB
+	implementation 'org.mariadb.jdbc:mariadb-java-client'
+
 
 	//mySQL 연동
 	//implementation 'mysql:mysql-connector-java:8.0.3'
