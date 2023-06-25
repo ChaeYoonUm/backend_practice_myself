@@ -11,7 +11,7 @@ public class HelloController {
     // "/hello" 요청이 오면 문자열 hello를 반환하는 기능을 가짐
     @GetMapping("hello")
     public String hello(){
-        return "hello";
+        return "hello22";
     }
 
     @GetMapping("/hello/dto")
