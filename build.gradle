@@ -27,7 +27,7 @@ tasks.named("jar") {
 
 
 // implementation : 보안에 더 강함
-// compile은 springboot 3.0 버전부터 권자하지 않는다고 함
+// compile은 springboot 3.0 버전부터 권장하지 않는다고 함
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -39,7 +39,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //스프링 부트용 Spring Data Jpa 추상화 라이브러리, 스프링 부트 버전에 맞춰 자동으로 JPA 관련 라이브러리들의 버전 관리
 	implementation 'com.h2database:h2' // 인메모리 관계형 데이터베이스, 프로젝트 의존성만으로 관리 가능, 메모리에서 실행 -> 재시작할 때마다 초기화되기 때문에 테스트 용도로 많이 쓰임
 	runtimeOnly 'com.h2database:h2'
-	implementation 'org.springframework.boot:spring-boot-starter-mustache'
+	implementation 'org.springframework.boot:spring-boot-starter-mustache' // mustache 적용
 
 	//MariaDB
 	implementation 'org.mariadb.jdbc:mariadb-java-client'
